@@ -10,12 +10,27 @@ Our Operations Department has been asking for a new Master App for a while.
 
 This are their app specs:
 
-1. Scan all Bluetooth devices around and show them in a table.
-2. Table is sorted with WWM Hardwares on top.
-3. Table has a header 
+- Implement an app where a user can see a table with all Bluetooth devices around.
+- Table is sorted with WWM Hardwares on top.
+- Table can be collapsed and expanded by clicking in the header.
+- Just WWM devices are clickable.
+- If user clicks on a WWM hardware we should connect to the device via bluetooth.
+- Bluetooth connection is encrypted with AES-256.
+- After connection, we should show map view.
+- Map view is centered in user position.
+- Map view shows mobile phone speed in real time.
+- Button should change deppending on vehicle state.
+- If user clicks in "play" button we should open the vehicle by sending a "power on" command. (Hint: intermittent light will appear in device).
+- After powering on the vehicle, button should change to "stop" button.
+- If user clicks in "stop" button, we should switch off the vehicle by sending a "power off" command.
 
-2. This table/view should be collapsed in a table header where we should be able to see the amount of BLE devices detected. Once they click on the header the list should be expanded or collapsed.
-3. BLE devices on the list may have two designs. On the one hand, WWM devices should be clickable and with a enabled effect design. On the other hand, non-WWM hardwares should appear with disabled design and user interation is disabled.
-4. Once the user cliks on a WWM device we connect to our device and open a new view with some info: show a MAP centered in user position, show current speed, button to interact with WWM device. We are very committed with security so BLE connection is encrypted with AES-256.
-5. If user clicks on "Play" button, we need to send a "ON" command to WWM device (hint: red light will be shown). Afterwards, if the user clicks on "Stop" button, we need to send a "OFF" command to WWM device.
+## Bonus
+
+- Start a timer since user clicks in start button until the vehicle is switched off. Then, reset timer.
+- Having a fleet manager operating with the car is expensive so is important for us to estimate the cost. The cost starts from the power on until the power off. It is 0.13€/min.
+- Animation for speed: 0 - 100 km/h
+
+### Design
+
+
 
