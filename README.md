@@ -6,10 +6,15 @@ After installing our hardware in thousands of cars we are in a hurry.
 
 Our Operations Department has been asking for a new Master App for a while.
 
+We are lucky, our Product Department has already done app design. You will find it here:
+
+[Master App Design](https://www.dropbox.com/s/id98a87usawniev/Master-App.zip?dl=0)
+
 # TODO
 
 This are their app specs:
 
+- App should be written in Kotlin or Swift, preferably with the latest stable version.
 - Implement an app where a user can see a table with all Bluetooth devices around.
 - Table is sorted with WWM Hardwares on top.
 - Table can be collapsed and expanded by clicking in the header.
@@ -29,8 +34,5 @@ This are their app specs:
 - Start a timer since user clicks in start button until the vehicle is switched off. Then, reset timer.
 - Having a fleet manager operating with the car is expensive so is important for us to estimate the cost. The cost starts from the power on until the power off. It is 0.13€/min.
 - Animation for speed: 0 - 100 km/h
-
-### Design
-
-
-
+- **Design:** pixel perfect design is highly valueable.
+- **Code:** production-ready code, ready to grow. Comments and notes when needed always help.
